@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 //========== PRELOADER// ==========>
 
 //========== STICKY HEADER, BACK TO TOP ==========>
-const headerArea = document.querySelectorAll(".header-area");
+const headerArea = document.querySelectorAll(".header-sticky");
 headerArea.forEach((area) => {
   let height;
   let navbar = document.querySelector(".navbar");

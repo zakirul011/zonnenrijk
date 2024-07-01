@@ -377,11 +377,7 @@ li {
 /*========== PRELOADER// ==========*/
 
 /*========== HEADER AREA ==========*/
-.navbar {
-  --bs-navbar-toggler-focus-width: 0;
-  --bs-navbar-brand-margin-end: 3em;
-  transition: .3s ease;
-
+.header-sticky{
   position: absolute;
   top: 0;
   left: 0;
@@ -390,18 +386,25 @@ li {
   z-index: 999;
   transition: 0.3s ease;
 }
+.navbar {
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-brand-margin-end: 3em;
+  transition: .3s ease;
+}
 .navbar-brand {
 	width: 17em;
 }
-.header-area.sticky .navbar {
-  animation: slideInDown 0.5s ease;
-	--bs-navbar-padding-y: 0;
+.header-sticky.sticky {
   position: fixed;
 }
-.header-area .navbar > div {
+.header-sticky.sticky .navbar {
+  animation: slideInDown 0.5s ease;
+	--bs-navbar-padding-y: 0;
+}
+.header-sticky .navbar > div {
   transition: .3s ease;
 }
-.header-area.sticky .navbar > div {
+.header-sticky.sticky .navbar > div {
 	padding-top: 1em !important;
 	padding-bottom: 1em !important;
 }
