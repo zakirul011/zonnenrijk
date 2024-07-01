@@ -1,0 +1,196 @@
+/*==========> XS + SM : < 768px (MOBILE) ==========*/
+@media (max-width: 767.98px) {
+  /* GLOBAL */
+  :root {
+    --section-spacer: 5em;
+    --section-title-spacer: 3em;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+  /* GLOBAL// */
+  
+  .offcanvas-body {
+    padding-top: 7em;
+  }
+
+  /* service */
+  .service-equal {
+    height: auto !important;
+  }
+
+  /* features */
+  .features-area {
+    min-height: auto;
+  }
+  .features-pop {
+    position: relative;
+    left: auto;
+    right: auto !important;
+    top: auto !important;
+    width: 100%;
+    max-width: none;
+    margin-top: .5em;
+  }
+  .features-pop .card-body,
+  .features-pop .card-header{
+    width: 100%;
+  }
+  .features-pops {
+    margin: 1.5em 1.5rem 0;
+  }
+
+  .card.py-4,
+  .card.px-4,
+  .card.px-5,
+  .card-img-overlay.px-4,
+  .card-img-overlay.px-5,
+  .card-body.px-4,
+  .card-body.px-5{
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+  .card.py-4,
+  .card.py-5,
+  .card-img-overlay.py-4,
+  .card-img-overlay.py-5,
+  .card-body.py-4,
+  .card-body.py-5{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+  .card.p-4,
+  .card.p-5,
+  .card-img-overlay.p-4,
+  .card-img-overlay.p-5,
+  .card-body.p-4,
+  .card-body.p-5{
+    padding: 2em !important;
+  }
+
+  .cta-area .card-img-top {
+    margin-top: -5%;
+  }
+}
+
+/*==========> XS + SM + MD : < 991px ==========*/
+@media (max-width: 991.98px) {
+}
+
+/*========== MD + LG + XL : 768px TO < 1400px (MIDDLE) ==========*/
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  /* GLOBAL */
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+  body {
+    font-size: 15px;
+  }
+  /* GLOBAL// */
+
+  .offcanvas-body {
+    padding-top: 7em;
+  }
+
+  .navbar-brand {
+    width: 14em;
+  }
+
+  .card.py-4,
+  .card.px-4,
+  .card.px-5,
+  .card-img-overlay.px-4,
+  .card-img-overlay.px-5,
+  .card-body.px-4,
+  .card-body.px-5{
+    padding-left: 2.2em !important;
+    padding-right: 2.2em !important;
+  }
+  .card.py-4,
+  .card.py-5,
+  .card-img-overlay.py-4,
+  .card-img-overlay.py-5,
+  .card-body.py-4,
+  .card-body.py-5{
+    padding-top: 2.2em !important;
+    padding-bottom: 2.2em !important;
+  }
+  .card.p-4,
+  .card.p-5,
+  .card-img-overlay.p-4,
+  .card-img-overlay.p-5,
+  .card-body.p-4,
+  .card-body.p-5{
+    padding: 2.2em !important;
+  }
+  
+}
+
+/*==========> MD : 768px TO < 991px ==========*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 760px;
+  }
+  /* GLOBAL// */
+}
+
+/*==========> LG : 992px TO < 1200px. ==========*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 980px;
+  }
+  /* GLOBAL// */
+}
+
+/*==========> XL : 1200px TO < 1400px ==========*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 1190px;
+  }
+  /* GLOBAL// */
+}
+
+/*==========> SM : 576px TO < 768px ==========*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* GLOBAL */
+  .container {
+    max-width: 460px;
+  }
+  /* GLOBAL// */
+}
