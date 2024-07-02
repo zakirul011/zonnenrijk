@@ -40,6 +40,7 @@
   /* features */
   .features-area {
     min-height: auto;
+    padding-top: calc(var(--section-spacer) * 1.5);
   }
   .features-pop {
     position: relative;
@@ -55,7 +56,7 @@
     width: 100%;
   }
   .features-pops {
-    margin: 1.5em 1.5rem 0;
+    margin: 7.5em 1.5rem 0;
   }
 
   .card.py-4,
@@ -88,6 +89,21 @@
 
   .cta-area .card-img-top {
     margin-top: -5%;
+  }
+
+  /* product */
+  .product-area.clip-bottom-end {
+    clip-path: none;
+  }
+
+  /* blog */
+  .fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  /* inner-page */
+  .inner-page-content {
+    margin-top: 6em;
   }
 }
 
@@ -156,14 +172,20 @@
   .card-body.p-5{
     padding: 2.2em !important;
   }
-  
+
+  .fs-4 {
+    font-size: 1.2rem !important;
+  }
+  .fs-1 {
+    font-size: 1.8rem !important;
+  }
 }
 
 /*==========> MD : 768px TO < 991px ==========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* GLOBAL */
-  .container {
-    max-width: 760px;
+  :root{    
+    --container-width: 760px;
   }
   /* GLOBAL// */
 }
@@ -171,17 +193,37 @@
 /*==========> LG : 992px TO < 1200px. ==========*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* GLOBAL */
-  .container {
-    max-width: 980px;
+  :root{    
+    --container-width: 980px;
   }
   /* GLOBAL// */
+}
+
+/*==========> LG AND GREATER. ==========*/
+@media (min-width: 992px) {
+  .p-lg-6,
+  .px-lg-6 {
+    padding-left: 3.75rem !important;
+    padding-right: 3.75rem !important;
+  }
+  .p-lg-6,
+  .py-lg-6 {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  .inner-page-wrapper .col-lg-9 {
+    width: 71.5%;
+  }
+  .inner-page-wrapper .col-lg-3 {
+    width: 28.5%;
+  }
 }
 
 /*==========> XL : 1200px TO < 1400px ==========*/
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   /* GLOBAL */
-  .container {
-    max-width: 1190px;
+  :root{    
+    --container-width: 1190px;
   }
   /* GLOBAL// */
 }
@@ -189,8 +231,8 @@
 /*==========> SM : 576px TO < 768px ==========*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* GLOBAL */
-  .container {
-    max-width: 460px;
+  :root{    
+    --container-width: 460px;
   }
   /* GLOBAL// */
 }

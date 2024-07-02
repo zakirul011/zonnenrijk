@@ -43,17 +43,20 @@ let serviceCards = document.querySelectorAll(".service-equal");
 let testimonialCards = document.querySelectorAll(".testimonial-equal");
 let projectCards = document.querySelectorAll(".project-card-equal");
 let productCards = document.querySelectorAll(".product-card-equal");
+let blogEqual = document.querySelectorAll(".blog-equal");
 window.addEventListener("load", () => {
   applyLergestheight(serviceCards);
   applyLergestheight(testimonialCards);
   applyLergestheight(projectCards);
   applyLergestheight(productCards);
+  applyLergestheight(blogEqual);
 });
 window.addEventListener("resize", () => {
   applyLergestheight(serviceCards);
   applyLergestheight(testimonialCards);
   applyLergestheight(projectCards);
   applyLergestheight(productCards);
+  applyLergestheight(blogEqual);
 });
 function applyLergestheight(items) {
   const itemheight = [];
@@ -135,6 +138,49 @@ navToggler.forEach((trigger) => {
 });
 //========== OFFCANVASE MENU// ==========>
 
+//========== STICKY SIDEBAR// ==========>
+function offset(elt) {
+  var rect = elt.getBoundingClientRect(),
+    bodyElt = document.documentElement;
+  return {
+    top: rect.top + bodyElt.scrollTop,
+    left: rect.left + bodyElt.scrollLeft,
+  };
+}
+
+window.addEventListener("load", function () {
+  if (document.querySelector(".stickybox")) {
+    const headerHeight = document.querySelector(".header-area").clientHeight;
+    const gap = 10;
+    const sidebar = document.querySelector(".stickybox");
+    const wrap = sidebar.parentElement;
+    const top = offset(sidebar).top - headerHeight - gap;
+    const wrapTop = offset(wrap).top;
+    const maxY =
+      wrapTop + wrap.offsetHeight - sidebar.offsetHeight - headerHeight - gap;
+    sidebar.style.setProperty("--top", maxY - top + "px");
+    sidebar.style.setProperty("--width", wrap.offsetWidth + "px");
+    sidebar.style.setProperty("--gap", gap + "px");
+
+    window.addEventListener("scroll", function () {
+      let y = document.scrollingElement.scrollTop;
+
+      if (y > top) {
+        if (y < maxY) {
+          sidebar.classList.add("fixed");
+          sidebar.classList.remove("bottom");
+        } else {
+          sidebar.classList.remove("fixed");
+          sidebar.classList.add("bottom");
+        }
+      } else {
+        sidebar.classList.remove("fixed");
+      }
+    });
+  }
+});
+//========== STICKY SIDEBAR// ==========>
+
 (function ($) {
   "use strict";
 
@@ -152,34 +198,6 @@ navToggler.forEach((trigger) => {
     },
   });
   //========== MAGNIFIC POPUP// ==========>
-
-  //========== ONE PAGE NAV ==========>
-  var top_offset = $(".header-area").height() - 170;
-  $(".mainmenu ul, .sidebar ul").onePageNav({
-    scrollOffset: top_offset,
-  });
-  //========== ONE PAGE NAV// ==========>
-
-  //========== SKROLLR JS ==========>
-  var skrollrSetting = {
-    forceHeight: false,
-    smoothScrollingDuration: 500,
-  };
-  var s = skrollr.init(skrollrSetting);
-  function doubleAction() {
-    if (window.matchMedia("(max-width: 991px)").matches) {
-      s.destroy();
-    } else {
-      s = skrollr.init(skrollrSetting);
-    }
-  }
-  window.addEventListener("load", () => {
-    doubleAction();
-  });
-  window.addEventListener("resize", () => {
-    doubleAction();
-  });
-  //========== SKROLLR JS// ==========>
 
   //========== TEAM SLIDER ==========>
   $(".team-slider").slick({

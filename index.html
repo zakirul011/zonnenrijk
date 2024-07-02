@@ -8,7 +8,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
    <!--======== CSS ========-->
-   <!-- <link rel="stylesheet" href="./assets/css/animate.min.css" /> -->
    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css" />
@@ -24,16 +23,7 @@
 <body>
    <!--======== PRELOADER ========-->
    <div class="preloader">
-      <div class="lds-roller">
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-      </div>
+      <div class="loader"></div>
    </div>
    <!--======== PRELOADER// ========-->
 
@@ -65,15 +55,15 @@
             </div>
          </div>
 
-         <div class="offcanvas offcanvas-end clip-bottom-end-corner">
+         <div class="offcanvas offcanvas-end clip-bottom-end">
             <div class="offcanvas-body d-flex flex-column">
                <ul class="navbar-nav">
                   <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                   <li class="nav-item"><a href="./project.html" class="nav-link">Projecten</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Producten</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Over ons</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                  <li class="nav-item"><a href="./project.html" class="nav-link">Producten</a></li>
+                  <li class="nav-item"><a href="./about-us.html" class="nav-link">Over ons</a></li>
+                  <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                  <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                </ul>
    
                <div class="list-group list-hover-effect mt-auto" style="--bs-list-group-color: var(--bs-heading-color)">
@@ -97,7 +87,7 @@
          <div class="hero-bg el-bg">
             <div class="shape position-absolute clip-x-50 bottom-0 z-n1" style="background: var(--bs-gradient-3-rev)">
             </div>
-            <div class="el-bg bg-attachment clip-bottom-end-corner"
+            <div class="el-bg bg-attachment clip-bottom-end"
                style="background-image: url(./assets/img/hero/bg.png)"></div>
          </div>
 
@@ -143,7 +133,7 @@
                               </div>
                            </div>
 
-                           <a href="#" class="btn btn-gradient mt-4 w-100">Bereken je voordeel</a>
+                           <button type="submit" class="btn btn-gradient mt-4 w-100">Bereken je voordeel</button>
 
                            <p class="text-body text-center mt-4 mb-0">
                               Of
@@ -217,10 +207,10 @@
       <section class="service-area section-padding">
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-md-10">
+               <div class="col-md-10 col-xl-8">
                   <div class="section-title text-center">
                      <img class="mb-4" style="width: 16.75em" src="./assets/img/logo.png" alt="" />
-                     <h2 class="text-white">Specialist in verduurzaming</h2>
+                     <h2>Specialist in verduurzaming</h2>
                   </div>
                </div>
             </div>
@@ -230,7 +220,7 @@
                   <div class="service-card text-center text-md-start">
                      <div class="service-equal d-flex flex-column">
                         <h5 class="text-primary">Advies op maat</h5>
-                        <p class="text-white">
+                        <p>
                            Onze experts staan klaar om al je vragen te beantwoorden. We
                            helpen je graag bij het maken van de beste keuze, passend
                            bij jouw situatie. We begrijpen dat elke installatie uniek
@@ -246,7 +236,7 @@
                   <div class="service-card text-center text-md-start">
                      <div class="service-equal d-flex flex-column">
                         <h5 class="text-primary">Aandacht voor jouw installatie</h5>
-                        <p class="text-white">
+                        <p>
                            We starten met een grondige inspectie van je dak. Met een
                            plan bepalen we de beste plek voor de zonnepanelen. Onze
                            eigen vakmensen plaatsen de panelen zorgvuldig en
@@ -261,7 +251,7 @@
                   <div class="service-card text-center text-md-start">
                      <div class="service-equal d-flex flex-column">
                         <h5 class="text-primary">Uitstekende nazorg</h5>
-                        <p class="text-white">
+                        <p>
                            Onze service stopt niet bij de installatie. We bieden
                            uitgebreide nazorg om te zorgen dat jouw systeem optimaal
                            blijft werken. Wil je meer weten over onze nazorgdiensten en
@@ -418,10 +408,10 @@
       <section class="project-area section-padding">
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-md-10">
+               <div class="col-md-10 col-xl-8">
                   <div class="section-title text-center">
-                     <h2 class="text-white">Recente projecten</h2>
-                     <p class="text-white">
+                     <h2>Recente projecten</h2>
+                     <p>
                         Ontdek hoe onze duurzame energieoplossingen het verschil maken
                         bij verschillende klanten.
                      </p>
@@ -435,129 +425,77 @@
                </div>
 
                <div class="row g-4">
-                  <div class="col-md-6 col-xl-4">
-                     <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                           <div class="flip-card-front project-card-equal card bg-white rounded-5">
-                              <div class="project-slider h-100 g-0">
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/1.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/2.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/1.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/2.jpg" alt="">
-                                 </div>
-                              </div>
 
-                              <div class="card-img-overlay p-5 d-flex justify-content-between align-items-center">
-                                 <h6 class="text-white mb-0 me-2">Haastrecht</h6>
-                              </div>
-                           </div>
-                           <div class="flip-card-back project-card-equal card bg-white rounded-5">
-                              <div
-                                 class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                                 <h6 class="text-primary">Voorschoten</h6>
-                                 <h3 class="card-title mb-3">
-                                    Maximale energieopbrengst met premium zonnepanelen
-                                 </h3>
-                                 <p class="card-text">
-                                    Deze installatie omvat 10 Aiko 450 Wp Full Black
-                                    zonnepanelen, gekoppeld aan Enphase IQ8HC micro-omvormers,
-                                    voor een hoog rendement en maximale energiebesparing.
-                                 </p>
-                                 <a class="btn btn-gradient mt-4" href="#">Bekijk dit project</a>
-                              </div>
+                  <div class="col-md-6 col-xl-4">
+                     <div class="project-card">
+                        <div class="project-card-equal card bg-white rounded-5">
+                           <div
+                              class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
+                              <h6 class="text-primary">Voorschoten</h6>
+                              <h3 class="card-title mb-3">
+                                 Maximale energieopbrengst met premium zonnepanelen
+                              </h3>
+                              <p class="card-text">
+                                 Deze installatie omvat 10 Aiko 450 Wp Full Black
+                                 zonnepanelen, gekoppeld aan Enphase IQ8HC micro-omvormers,
+                                 voor een hoog rendement en maximale energiebesparing.
+                              </p>
+                              <a class="btn btn-gradient mt-4" href="./project.html">Bekijk dit project</a>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6 col-xl-4">
-                     <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                           <div class="flip-card-front project-card-equal card bg-white rounded-5">
-                              <div class="project-slider h-100 g-0">
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/2.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/1.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/2.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/1.jpg" alt="">
-                                 </div>
-                              </div>
 
-                              <div class="card-img-overlay p-5 d-flex justify-content-between align-items-center">
-                                 <h6 class="text-white mb-0 me-2">Haastrecht</h6>
+                  <div class="col-md-6 col-xl-4">
+                     <div class="project-card">
+                        <div class="project-card-equal card rounded-5">
+                           <div class="project-slider h-100 g-0">
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/1.jpg" alt="">
+                              </div>
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/2.jpg" alt="">
+                              </div>
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/1.jpg" alt="">
+                              </div>
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/2.jpg" alt="">
                               </div>
                            </div>
-                           <div class="flip-card-back project-card-equal card bg-white rounded-5">
-                              <div
-                                 class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                                 <h6 class="text-primary">Voorschoten</h6>
-                                 <h3 class="card-title mb-3">
-                                    Maximale energieopbrengst met premium zonnepanelen
-                                 </h3>
-                                 <p class="card-text">
-                                    Deze installatie omvat 10 Aiko 450 Wp Full Black
-                                    zonnepanelen, gekoppeld aan Enphase IQ8HC micro-omvormers,
-                                    voor een hoog rendement en maximale energiebesparing.
-                                 </p>
-                                 <a class="btn btn-gradient mt-4" href="#">Bekijk dit project</a>
-                              </div>
+
+                           <div class="card-img-overlay p-5 d-flex justify-content-between align-items-center">
+                              <h6 class="mb-0 me-2"><a href="./project-details.html">Dalfsen</a></h6>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6 col-xl-4">
-                     <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                           <div class="flip-card-front project-card-equal card bg-white rounded-5">
-                              <div class="project-slider h-100 g-0">
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/1.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/2.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/1.jpg" alt="">
-                                 </div>
-                                 <div class="project-slide position-relative z-1 gradient-overlay">
-                                    <img class="card-img" src="./assets/img/project/2.jpg" alt="">
-                                 </div>
-                              </div>
 
-                              <div class="card-img-overlay p-5 d-flex justify-content-between align-items-center">
-                                 <h6 class="text-white mb-0 me-2">Haastrecht</h6>
+                  <div class="col-md-6 col-xl-4">
+                     <div class="project-card">
+                        <div class="project-card-equal card rounded-5">
+                           <div class="project-slider h-100 g-0">
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/2.jpg" alt="">
+                              </div>
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/1.jpg" alt="">
+                              </div>
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/2.jpg" alt="">
+                              </div>
+                              <div class="project-slide position-relative z-1 gradient-overlay">
+                                 <img class="card-img" src="./assets/img/project/1.jpg" alt="">
                               </div>
                            </div>
-                           <div class="flip-card-back project-card-equal card bg-white rounded-5">
-                              <div
-                                 class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                                 <h6 class="text-primary">Voorschoten</h6>
-                                 <h3 class="card-title mb-3">
-                                    Maximale energieopbrengst met premium zonnepanelen
-                                 </h3>
-                                 <p class="card-text">
-                                    Deze installatie omvat 10 Aiko 450 Wp Full Black
-                                    zonnepanelen, gekoppeld aan Enphase IQ8HC micro-omvormers,
-                                    voor een hoog rendement en maximale energiebesparing.
-                                 </p>
-                                 <a class="btn btn-gradient mt-4" href="#">Bekijk dit project</a>
-                              </div>
+
+                           <div class="card-img-overlay p-5 d-flex justify-content-between align-items-center">
+                              <h6 class="mb-0 me-2"><a href="./project-details.html">Haastrecht</a></h6>
                            </div>
                         </div>
                      </div>
                   </div>
+
                </div>
             </div>
          </div>
@@ -600,10 +538,10 @@
                            </li>
                         </ul>
 
-                        <h1 class="text-white mb-3 lh-1">
+                        <h1 class="mb-3 lh-1">
                            Aanbevolen door 100% van onze klanten
                         </h1>
-                        <h4 class="text-white">Klantebeoordeling 9,8</h4>
+                        <h4 >Klantebeoordeling 9,8</h4>
 
                         <a href="#" class="btn btn-outline-primary mt-4">Bekijk alle reviews</a>
                      </div>
@@ -752,187 +690,96 @@
       <!--======== TESTIMONIAL AREA// ========-->
 
       <!--======== PRODUCT AREA ========-->
-      <section class="product-area clip-bottom-end-corner overflow-hidden section-padding"
+      <section class="product-area clip-bottom-end overflow-hidden section-padding"
          style="background-color: #4B4B4B;">
          <div class="container">
 
             <div class="row justify-content-center">
-               <div class="col-md-10">
+               <div class="col-md-10 col-xl-8">
                   <div class="section-title text-center">
-                     <h2 class="text-white">Onze producten</h2>
+                     <h2>Onze producten</h2>
                   </div>
                </div>
             </div>
 
             <div class="product-slider slider-edge">
-               <div class="product-slide flip-card">
-                  <div class="flip-card-inner">
-                     <div class="flip-card-front product-card-equal card rounded-5 border-0"
-                        style="--bs-card-bg: var(--bs-gray)">
-                        <img class="card-img-top" src="./assets/img/product/1.png" alt="">
-                        <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
-                           <h3 class="card-title text-white">Aiko 460 Wp</h3>
-                           <p class="card-text text-white fs-5">Glas-Glas/All Black</p>
-                        </div>
-                     </div>
-                     <div class="flip-card-back product-card-equal card bg-white rounded-5">
-                        <div
-                           class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                           <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
-                           <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
-                              en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
-                              3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
-                              afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
-                              op een pallet.</p>
 
-                           <h6 class="mt-5">Meer informatie</h6>
-                           <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
-                              met ons op.</p>
-                           <a href="#" class="btn btn-gradient mt-2">Contact</a>
-                        </div>
+               <div class="product-slide">
+                  <div class="product-card-equal card rounded-5 border-0"
+                     style="--bs-card-bg: var(--bs-gray)">
+                     <img class="card-img-top" src="./assets/img/product/1.png" alt="">
+                     <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
+                        <h3 class="card-title"><a href="#">Aiko 460 Wp</a></h3>
+                        <p class="card-text fs-5">Glas-Glas/All Black</p>
                      </div>
                   </div>
                </div>
-               <div class="product-slide flip-card">
-                  <div class="flip-card-inner">
-                     <div class="flip-card-front product-card-equal card rounded-5 border-0"
-                        style="--bs-card-bg: var(--bs-gray)">
-                        <img class="card-img-top" src="./assets/img/product/2.png" alt="">
-                        <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
-                           <h3 class="card-title text-white">DMEGC 535Wp</h3>
-                           <p class="card-text text-white fs-5">Zilver-Wit</p>
-                        </div>
-                     </div>
-                     <div class="flip-card-back product-card-equal card bg-white rounded-5">
-                        <div
-                           class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                           <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
-                           <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
-                              en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
-                              3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
-                              afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
-                              op een pallet.</p>
+               
+               <div class="product-slide">
+                  <div class="product-card-equal card bg-white rounded-5">
+                     <div
+                        class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
+                        <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
+                        <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
+                           en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
+                           3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
+                           afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
+                           op een pallet.</p>
 
-                           <h6 class="mt-5">Meer informatie</h6>
-                           <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
-                              met ons op.</p>
-                           <a href="#" class="btn btn-gradient mt-2">Contact</a>
-                        </div>
+                        <h6 class="mt-5">Meer informatie</h6>
+                        <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
+                           met ons op.</p>
+                        <a href="./contact.html" class="btn btn-gradient mt-2">Contact</a>
                      </div>
                   </div>
                </div>
-               <div class="product-slide flip-card">
-                  <div class="flip-card-inner">
-                     <div class="flip-card-front product-card-equal card rounded-5 border-0"
-                        style="--bs-card-bg: var(--bs-gray)">
-                        <img class="card-img-top" src="./assets/img/product/1.png" alt="">
-                        <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
-                           <h3 class="card-title text-white">Aiko 460 Wp</h3>
-                           <p class="card-text text-white fs-5">Glas-Glas/All Black</p>
-                        </div>
-                     </div>
-                     <div class="flip-card-back product-card-equal card bg-white rounded-5">
-                        <div
-                           class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                           <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
-                           <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
-                              en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
-                              3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
-                              afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
-                              op een pallet.</p>
 
-                           <h6 class="mt-5">Meer informatie</h6>
-                           <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
-                              met ons op.</p>
-                           <a href="#" class="btn btn-gradient mt-2">Contact</a>
-                        </div>
+               <div class="product-slide">
+                  <div class="product-card-equal card rounded-5 border-0"
+                     style="--bs-card-bg: var(--bs-gray)">
+                     <img class="card-img-top" src="./assets/img/product/2.png" alt="">
+                     <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
+                        <h3 class="card-title"><a href="#">DMEGC 535Wp</a></h3>
+                        <p class="card-text fs-5">Zilver-Wit</p>
                      </div>
                   </div>
                </div>
-               <div class="product-slide flip-card">
-                  <div class="flip-card-inner">
-                     <div class="flip-card-front product-card-equal card rounded-5 border-0"
-                        style="--bs-card-bg: var(--bs-gray)">
-                        <img class="card-img-top" src="./assets/img/product/2.png" alt="">
-                        <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
-                           <h3 class="card-title text-white">DMEGC 535Wp</h3>
-                           <p class="card-text text-white fs-5">Zilver-Wit</p>
-                        </div>
-                     </div>
-                     <div class="flip-card-back product-card-equal card bg-white rounded-5">
-                        <div
-                           class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                           <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
-                           <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
-                              en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
-                              3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
-                              afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
-                              op een pallet.</p>
 
-                           <h6 class="mt-5">Meer informatie</h6>
-                           <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
-                              met ons op.</p>
-                           <a href="#" class="btn btn-gradient mt-2">Contact</a>
-                        </div>
+               <div class="product-slide">
+                  <div class="product-card-equal card rounded-5 border-0"
+                     style="--bs-card-bg: var(--bs-gray)">
+                     <img class="card-img-top" src="./assets/img/product/2.png" alt="">
+                     <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
+                        <h3 class="card-title"><a href="#">DMEGC 535Wp</a></h3>
+                        <p class="card-text fs-5">Zilver-Wit</p>
                      </div>
                   </div>
                </div>
-               <div class="product-slide flip-card">
-                  <div class="flip-card-inner">
-                     <div class="flip-card-front product-card-equal card rounded-5 border-0"
-                        style="--bs-card-bg: var(--bs-gray)">
-                        <img class="card-img-top" src="./assets/img/product/1.png" alt="">
-                        <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
-                           <h3 class="card-title text-white">Aiko 460 Wp</h3>
-                           <p class="card-text text-white fs-5">Glas-Glas/All Black</p>
-                        </div>
-                     </div>
-                     <div class="flip-card-back product-card-equal card bg-white rounded-5">
-                        <div
-                           class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                           <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
-                           <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
-                              en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
-                              3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
-                              afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
-                              op een pallet.</p>
 
-                           <h6 class="mt-5">Meer informatie</h6>
-                           <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
-                              met ons op.</p>
-                           <a href="#" class="btn btn-gradient mt-2">Contact</a>
-                        </div>
+               <div class="product-slide">
+                  <div class="product-card-equal card rounded-5 border-0"
+                     style="--bs-card-bg: var(--bs-gray)">
+                     <img class="card-img-top" src="./assets/img/product/2.png" alt="">
+                     <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
+                        <h3 class="card-title"><a href="#">DMEGC 535Wp</a></h3>
+                        <p class="card-text fs-5">Zilver-Wit</p>
                      </div>
                   </div>
                </div>
-               <div class="product-slide flip-card">
-                  <div class="flip-card-inner">
-                     <div class="flip-card-front product-card-equal card rounded-5 border-0"
-                        style="--bs-card-bg: var(--bs-gray)">
-                        <img class="card-img-top" src="./assets/img/product/2.png" alt="">
-                        <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
-                           <h3 class="card-title text-white">DMEGC 535Wp</h3>
-                           <p class="card-text text-white fs-5">Zilver-Wit</p>
-                        </div>
-                     </div>
-                     <div class="flip-card-back product-card-equal card bg-white rounded-5">
-                        <div
-                           class="card-body p-5 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
-                           <h6 class="text-primary mb-3">DMEGC 440Wp | All Black</h6>
-                           <p class="card-text">De DM440M10RT-54HBB van DMEGC Solar heeft een vermogen van 440 Wattpiek
-                              en beschikt over 108 Monokristallijn silicium cellen. De is DMEGC 440Wp is voorzien van
-                              3.2mm gehard glas met antireflectiecoating en heeft een max. efficiëntie van 22,27%. De
-                              afmetingen van dit zonnepaneel met zwart frame bedragen 1762x1134x30mm. Er zitten 36 stuks
-                              op een pallet.</p>
 
-                           <h6 class="mt-5">Meer informatie</h6>
-                           <p class="card-text">Wil je meer informatie over onze producten? Neem vrijblijvend contact
-                              met ons op.</p>
-                           <a href="#" class="btn btn-gradient mt-2">Contact</a>
-                        </div>
+               <div class="product-slide">
+                  <div class="product-card-equal card rounded-5 border-0"
+                     style="--bs-card-bg: var(--bs-gray)">
+                     <img class="card-img-top" src="./assets/img/product/1.png" alt="">
+                     <div class="card-body pt-0 px-5 pb-5 text-center d-flex flex-column justify-content-end">
+                        <h3 class="card-title"><a href="#">Aiko 460 Wp</a></h3>
+                        <p class="card-text fs-5">Glas-Glas/All Black</p>
                      </div>
                   </div>
                </div>
+               
+
+
             </div>
 
          </div>
@@ -943,9 +790,9 @@
       <section class="team-area overflow-hidden section-padding">
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-md-10">
+               <div class="col-md-10 col-xl-8">
                   <div class="section-title text-center">
-                     <h2 class="text-white">Ontmoet team Zonnenrijk</h2>
+                     <h2>Ontmoet team Zonnenrijk</h2>
                   </div>
                </div>
             </div>
@@ -1038,7 +885,7 @@
       <!--======== COVER IMG// ========-->
 
       <!--======== CTA AREA ========-->
-      <section class="cta-area section-padding">
+      <section class="cta-area section-padding-top">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-10 col-xl-9">
@@ -1061,7 +908,7 @@
                                     We kijken graag of jouw dak ook geschikt is voor
                                     zonnepanelen en hoeveel je hiermee kunt besparen.
                                  </p>
-                                 <a href="#" class="btn btn-gradient mt-1">Contact</a>
+                                 <a href="./contact.html" class="btn btn-gradient mt-1">Contact</a>
                               </div>
                            </div>
                         </div>
@@ -1076,7 +923,7 @@
    <!--======== MAIN BODY// ========-->
 
    <!--======== FOOTER AREA ========-->
-   <footer class="footer-area text-center text-md-start">
+   <footer class="footer-area text-center text-md-start section-padding-top">
       <div class="container">
          <div class="row g-4 g-md-5">
             <div class="col-md-12">
@@ -1085,7 +932,7 @@
                </div>
             </div>
             <div class="col-md-6 col-lg-3">
-               <h5 class="text-white">Adres</h5>
+               <h5>Adres</h5>
 
                <ul class="list-group" style="--bs-list-group-color: var(--bs-white)">
                   <li class="list-group-item">Zonnenrijk</li>
@@ -1096,7 +943,7 @@
                   </li>
                </ul>
 
-               <h6 class="fs-6 fw-semibold text-white mt-5">
+               <h6 class="fs-6 fw-semibold mt-5">
                   Bel onze specialisten op:
                </h6>
                <h5 class="text-primary">
@@ -1104,20 +951,20 @@
                </h5>
             </div>
             <div class="col-md-6 col-lg-3">
-               <h5 class="text-white">Menu</h5>
+               <h5>Menu</h5>
 
                <div class="list-group list-hover-effect" style="--bs-list-group-color: var(--bs-primary)">
-                  <a href="#" class="list-group-item"><span>Home</span></a>
+                  <a href="./index.html" class="list-group-item"><span>Home</span></a>
                   <a href="#" class="list-group-item"><span>Werkwijze</span></a>
-                  <a href="#" class="list-group-item"><span>Projecten</span></a>
-                  <a href="#" class="list-group-item"><span>Blog</span></a>
+                  <a href="./project.html" class="list-group-item"><span>Projecten</span></a>
+                  <a href="./blog.html" class="list-group-item"><span>Blog</span></a>
                   <a href="#" class="list-group-item"><span>Warmtefonds</span></a>
                   <a href="#" class="list-group-item"><span>Veel gestelde vragen</span></a>
-                  <a href="#" class="list-group-item"><span>Contact</span></a>
+                  <a href="./contact.html" class="list-group-item"><span>Contact</span></a>
                </div>
             </div>
             <div class="col-md-6 col-lg-4">
-               <h5 class="text-white">Veel gestelde vragen</h5>
+               <h5>Veel gestelde vragen</h5>
 
                <div class="list-group list-hover-effect" style="--bs-list-group-color: var(--bs-primary)">
                   <a href="#" class="list-group-item"><span>Is mijn dak geschikt voor zonnepanelen?</span></a>
@@ -1143,7 +990,7 @@
                </div>
             </div>
             <div class="col-md-12">
-               <p class="text-center text-white mt-4">
+               <p class="text-center mt-4">
                   &copy; 2024 <a href="./index.html">Zonnenrijk</a>
                </p>
             </div>
@@ -1172,7 +1019,7 @@
                   </ul>
                </div>
                <div class="col-auto">
-                  <span class="text-white">Klantbeoordeling 9,8 / 10 -
+                  <span>Klantbeoordeling 9,8 / 10 -
                      <a href="#" class="text-decoration-underline">Bekijk alle recensies</a></span>
                </div>
                <div class="col-auto">
@@ -1187,8 +1034,6 @@
    <!--======== ESSENTIAL JS, PLUGIN JS ========-->
    <script src="./assets/js/jquery-3.7.1.min.js"></script>
    <script src="./assets/js/magnific-popup.min.js"></script>
-   <script src="./assets/js/one-page-nav.min.js"></script>
-   <script src="./assets/js/skrollr.min.js"></script>
    <script src="./assets/js/slick.min.js"></script>
 
    <!--======== CUSTOM JS ========-->
